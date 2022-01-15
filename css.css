@@ -1,0 +1,63 @@
+body {
+    background-image: url('https://clck.ru/R6MJV');
+    justify-content: center;
+}
+.a {
+    display: flex;
+    font-family: 'McLaren', cursive;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container {
+    flex-wrap: wrap;
+    width: 45vw;
+    height: 40vw;
+    border-style: solid;
+    background-color: lightskyblue;
+    border-radius: 25px;
+    justify-content: space-between;
+}
+.flex-item {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: lightskyblue;
+
+}
+.card {
+    transition: 2s ease-out;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.flex-item:hover .card {
+    transform: rotateY(180deg);
+}
+.front, .back {
+    position: absolute;
+    z-index: 2;
+    background-color: mediumblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.back {
+    transform: rotateY(180deg);
+    z-index: 1;
+    background-color: red;
+    color: white;
+}
+.front {
+    backface-visibility: hidden;
+}
+
+
+
